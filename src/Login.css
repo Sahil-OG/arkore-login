@@ -1,0 +1,154 @@
+/* Reset & Layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f5f6fa;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* logo on left */
+  padding: 10px 30px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo {
+  width: 45px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.header-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Main Container */
+.login-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  flex: 1;
+}
+
+/* Left Side */
+.left-column {
+  width: 48%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.login-box {
+  width: 80%;
+  max-width: 400px;
+}
+
+.login-box h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.login-box p {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.login-box label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.forgot-password a {
+  color: #5b57d1;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(90deg, #5b57d1, #6f6efb);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-btn:hover {
+  opacity: 0.9;
+}
+
+/* Login As Section */
+.login-as {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.login-as p {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.role-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.role-buttons button {
+  border: 1px solid #5b57d1;
+  background: transparent;
+  color: #5b57d1;
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.role-buttons button:hover {
+  background: #5b57d1;
+  color: white;
+}
+
+/* Right Side */
+.right-column {
+  width: 52%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
