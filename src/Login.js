@@ -4,14 +4,25 @@ import "./Login.css";
 function Login() {
   return (
     <div className="login-page">
+
       {/* Header Section */}
       <header className="header">
-        <img
-          src={process.env.PUBLIC_URL + "/arkore-logo.jpg"}
-          alt="Arkore Solutions"
-          className="header-logo"
-        />
-        <h2 className="header-title">Arkore Class360</h2>
+        {/* Left Side - Logo + App Name */}
+        <div className="header-left">
+          <img
+            src={process.env.PUBLIC_URL + "/arkore-logo.jpg"}
+            alt="Arkore Solutions"
+            className="header-logo"
+          />
+          <h2 className="header-title">Arkore Class360</h2>
+        </div>
+
+        {/* Right Side - BUY BUTTON */}
+        <div className="header-right">
+          <button className="buy-btn">
+            Buy
+          </button>
+        </div>
       </header>
 
       <div className="login-container">
